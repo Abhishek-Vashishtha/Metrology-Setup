@@ -1,0 +1,11 @@
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\bin\Debug\Metrology Setup.exe.config
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\bin\Debug\Metrology Setup.exe
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\bin\Debug\Metrology Setup.pdb
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.csproj.AssemblyReference.cache
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.csproj.SuggestedBindingRedirects.cache
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology_Setup.Metrology.resources
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology_Setup.Properties.Resources.resources
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.csproj.GenerateResource.cache
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.csproj.CoreCompileInputs.cache
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.exe
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.pdb
