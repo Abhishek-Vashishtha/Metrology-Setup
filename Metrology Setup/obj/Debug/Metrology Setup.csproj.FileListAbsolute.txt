@@ -9,3 +9,4 @@ D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Set
 D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.csproj.CoreCompileInputs.cache
 D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.exe
 D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology Setup.pdb
+D:\Learnings\C# Projects\Metrology Setup\Metrology Setup\obj\Debug\Metrology_Setup.WF_CTRL.resources
