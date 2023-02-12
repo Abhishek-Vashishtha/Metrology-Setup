@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.Btn_wf = new System.Windows.Forms.Button();
             this.Sidepanel = new System.Windows.Forms.Panel();
             this.Btn_others = new System.Windows.Forms.Button();
             this.Btn_accuracy = new System.Windows.Forms.Button();
             this.Btn_Inst_data = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Btn_wf = new System.Windows.Forms.Button();
             this.CB_Wf_livestrm = new System.Windows.Forms.CheckBox();
             this.Tmr_10ms = new System.Windows.Forms.Timer(this.components);
-            this.wF_CTRL1 = new Metrology_Setup.WF_CTRL();
+            this.Pnl_wf_live = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +58,20 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(234, 737);
             this.MainPanel.TabIndex = 3;
+            // 
+            // Btn_wf
+            // 
+            this.Btn_wf.BackColor = System.Drawing.Color.Black;
+            this.Btn_wf.FlatAppearance.BorderSize = 0;
+            this.Btn_wf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_wf.ForeColor = System.Drawing.Color.Crimson;
+            this.Btn_wf.Location = new System.Drawing.Point(36, 96);
+            this.Btn_wf.Name = "Btn_wf";
+            this.Btn_wf.Size = new System.Drawing.Size(195, 63);
+            this.Btn_wf.TabIndex = 5;
+            this.Btn_wf.Text = "Waveforms";
+            this.Btn_wf.UseVisualStyleBackColor = false;
+            this.Btn_wf.Click += new System.EventHandler(this.Btn_wf_Click);
             // 
             // Sidepanel
             // 
@@ -117,52 +132,53 @@
             this.panel1.Size = new System.Drawing.Size(1106, 56);
             this.panel1.TabIndex = 4;
             // 
-            // Btn_wf
-            // 
-            this.Btn_wf.BackColor = System.Drawing.Color.Black;
-            this.Btn_wf.FlatAppearance.BorderSize = 0;
-            this.Btn_wf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_wf.ForeColor = System.Drawing.Color.Crimson;
-            this.Btn_wf.Location = new System.Drawing.Point(36, 96);
-            this.Btn_wf.Name = "Btn_wf";
-            this.Btn_wf.Size = new System.Drawing.Size(195, 63);
-            this.Btn_wf.TabIndex = 5;
-            this.Btn_wf.Text = "Waveforms";
-            this.Btn_wf.UseVisualStyleBackColor = false;
-            this.Btn_wf.Click += new System.EventHandler(this.Btn_wf_Click);
-            // 
             // CB_Wf_livestrm
             // 
             this.CB_Wf_livestrm.AutoSize = true;
-            this.CB_Wf_livestrm.Location = new System.Drawing.Point(911, 674);
+            this.CB_Wf_livestrm.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.CB_Wf_livestrm.Location = new System.Drawing.Point(1096, 88);
             this.CB_Wf_livestrm.Name = "CB_Wf_livestrm";
             this.CB_Wf_livestrm.Size = new System.Drawing.Size(138, 26);
             this.CB_Wf_livestrm.TabIndex = 7;
             this.CB_Wf_livestrm.Text = "Live Stream";
-            this.CB_Wf_livestrm.UseVisualStyleBackColor = true;
+            this.CB_Wf_livestrm.UseVisualStyleBackColor = false;
+            this.CB_Wf_livestrm.CheckedChanged += new System.EventHandler(this.CB_Wf_livestrm_CheckedChanged);
             // 
             // Tmr_10ms
             // 
             this.Tmr_10ms.Enabled = true;
             this.Tmr_10ms.Tick += new System.EventHandler(this.Tmr_10ms_Tick);
             // 
-            // wF_CTRL1
+            // Pnl_wf_live
             // 
-            this.wF_CTRL1.Location = new System.Drawing.Point(234, 63);
-            this.wF_CTRL1.Margin = new System.Windows.Forms.Padding(4);
-            this.wF_CTRL1.Name = "wF_CTRL1";
-            this.wF_CTRL1.Size = new System.Drawing.Size(1093, 604);
-            this.wF_CTRL1.TabIndex = 5;
+            this.Pnl_wf_live.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pnl_wf_live.Location = new System.Drawing.Point(240, 234);
+            this.Pnl_wf_live.Name = "Pnl_wf_live";
+            this.Pnl_wf_live.Size = new System.Drawing.Size(1088, 434);
+            this.Pnl_wf_live.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(964, 84);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 33);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Capture";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Metrology
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1340, 737);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Pnl_wf_live);
             this.Controls.Add(this.CB_Wf_livestrm);
-            this.Controls.Add(this.wF_CTRL1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,9 +201,10 @@
         private System.Windows.Forms.Button Btn_Inst_data;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Btn_wf;
-        private WF_CTRL wF_CTRL1;
         private System.Windows.Forms.CheckBox CB_Wf_livestrm;
         private System.Windows.Forms.Timer Tmr_10ms;
+        private System.Windows.Forms.Panel Pnl_wf_live;
+        private System.Windows.Forms.Button button1;
     }
 }
 

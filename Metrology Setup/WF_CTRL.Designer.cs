@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Pb_wf = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Pb_wf)).BeginInit();
+            this.Pnl_live_wf = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // Pb_wf
+            // Pnl_live_wf
             // 
-            this.Pb_wf.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Pb_wf.Location = new System.Drawing.Point(3, 3);
-            this.Pb_wf.Name = "Pb_wf";
-            this.Pb_wf.Size = new System.Drawing.Size(1144, 646);
-            this.Pb_wf.TabIndex = 0;
-            this.Pb_wf.TabStop = false;
+            this.Pnl_live_wf.AutoScroll = true;
+            this.Pnl_live_wf.AutoSize = true;
+            this.Pnl_live_wf.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Pnl_live_wf.Location = new System.Drawing.Point(3, 82);
+            this.Pnl_live_wf.Name = "Pnl_live_wf";
+            this.Pnl_live_wf.Size = new System.Drawing.Size(1000, 426);
+            this.Pnl_live_wf.TabIndex = 0;
             // 
             // WF_CTRL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Pb_wf);
+            this.Controls.Add(this.Pnl_live_wf);
             this.Name = "WF_CTRL";
-            this.Size = new System.Drawing.Size(1150, 652);
-            ((System.ComponentModel.ISupportInitialize)(this.Pb_wf)).EndInit();
+            this.Size = new System.Drawing.Size(1006, 590);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox Pb_wf;
+        private System.Windows.Forms.Panel Pnl_live_wf;
     }
 }

@@ -17,7 +17,7 @@ namespace Metrology_Setup
             InitializeComponent();
             Sidepanel.Height = Btn_wf.Height;
             Sidepanel.Top = Btn_wf.Top;
-            wF_CTRL1.Hide();
+            //wF_CTRL1.Hide();
         }
 
         private void Btn_wf_Click(object sender, EventArgs e)
@@ -48,13 +48,23 @@ namespace Metrology_Setup
         {
             if(CB_Wf_livestrm.Checked)
             {
-                wF_CTRL1.BringToFront();
-                wF_CTRL1.Show();
+              //  wF_CTRL1.BringToFront();
+              //  wF_CTRL1.Show();
             }
             else
             {
-                wF_CTRL1.Hide();
+               // wF_CTRL1.Hide();
             }
+        }
+
+        private void CB_Wf_livestrm_CheckedChanged(object sender, EventArgs e)
+        {
+            Pen Redpen = new Pen(Color.Red,2);
+            Redpen.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            
+            Graphics gfx = Pnl_wf_live.CreateGraphics();
+            //gfx.Clear(Color.Black);
+            gfx.DrawLine(Redpen,10,20,30,40);
         }
     }
 }
