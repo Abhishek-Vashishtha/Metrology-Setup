@@ -17,6 +17,7 @@ namespace Metrology_Setup
             InitializeComponent();
             Sidepanel.Height = Btn_wf.Height;
             Sidepanel.Top = Btn_wf.Top;
+            wF_CTRL1.Hide();
         }
 
         private void Btn_wf_Click(object sender, EventArgs e)
@@ -41,6 +42,19 @@ namespace Metrology_Setup
         {
             Sidepanel.Height = Btn_others.Height;
             Sidepanel.Top=Btn_others.Top;
+        }
+
+        private void Tmr_10ms_Tick(object sender, EventArgs e)
+        {
+            if(CB_Wf_livestrm.Checked)
+            {
+                wF_CTRL1.BringToFront();
+                wF_CTRL1.Show();
+            }
+            else
+            {
+                wF_CTRL1.Hide();
+            }
         }
     }
 }
