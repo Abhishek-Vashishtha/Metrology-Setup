@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.IO.Ports;
 
 namespace Metrology_Setup
 {
@@ -17,7 +19,8 @@ namespace Metrology_Setup
             InitializeComponent();
             Sidepanel.Height = Btn_wf.Height;
             Sidepanel.Top = Btn_wf.Top;
-            //wF_CTRL1.Hide();
+            //wF_CTRL1.Show();
+            serial_port_init();
         }
 
         private void Btn_wf_Click(object sender, EventArgs e)
@@ -46,25 +49,21 @@ namespace Metrology_Setup
 
         private void Tmr_10ms_Tick(object sender, EventArgs e)
         {
-            if(CB_Wf_livestrm.Checked)
+            if(!wF_CTRL1.Cb_Live.Checked)
             {
-              //  wF_CTRL1.BringToFront();
-              //  wF_CTRL1.Show();
-            }
-            else
-            {
-               // wF_CTRL1.Hide();
+              wF_CTRL1.Pb_Wf.BackgroundImage = null;
             }
         }
 
-        private void CB_Wf_livestrm_CheckedChanged(object sender, EventArgs e)
+        private void wF_CTRL1_Load(object sender, EventArgs e)
         {
-            Pen Redpen = new Pen(Color.Red,2);
-            Redpen.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            
-            Graphics gfx = Pnl_wf_live.CreateGraphics();
-            //gfx.Clear(Color.Black);
-            gfx.DrawLine(Redpen,10,20,30,40);
+            wF_CTRL1.Default_combobox_message();
+        }
+        // Serial port functions
+
+        public void serial_port_init()
+        {
+            SerialPort serialPort = new SerialPort();
         }
     }
 }
